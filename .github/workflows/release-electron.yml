@@ -1,0 +1,40 @@
+name: Build And Publish Electron App
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: electron-release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release-windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: windows/SqlCockpit.ServiceControl.Electron
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: windows/SqlCockpit.ServiceControl.Electron/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and publish Windows release assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run dist

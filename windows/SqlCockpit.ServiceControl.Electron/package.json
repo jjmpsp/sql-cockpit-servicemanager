@@ -37,7 +37,7 @@
       {
         "provider": "github",
         "owner": "jjmpsp",
-        "repo": "SQL-Tables-Sync",
+        "repo": "sql-cockpit-servicemanager",
         "releaseType": "release"
       }
     ]
