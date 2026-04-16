@@ -1,9 +1,9 @@
 # SQL Cockpit Service Manager
 
-[![GitHub release](https://img.shields.io/github/v/release/jjmpsp/sql-cockpit-servicemanager?label=version&logo=github)](https://github.com/jjmpsp/sql-cockpit-servicemanager/releases)
-[![Build & Publish](https://github.com/jjmpsp/sql-cockpit-servicemanager/actions/workflows/release-electron.yml/badge.svg)](https://github.com/jjmpsp/sql-cockpit-servicemanager/actions/workflows/release-electron.yml)
+[![GitHub release](https://img.shields.io/github/v/release/sql-cockpit/sql-cockpit-servicemanager?label=version&logo=github)](https://github.com/sql-cockpit/sql-cockpit-servicemanager/releases)
+[![Build & Publish](https://github.com/sql-cockpit/sql-cockpit-servicemanager/actions/workflows/release-electron.yml/badge.svg)](https://github.com/sql-cockpit/sql-cockpit-servicemanager/actions/workflows/release-electron.yml)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows-lightgrey?logo=windows)](https://github.com/jjmpsp/sql-cockpit-servicemanager)
+[![Platform](https://img.shields.io/badge/platform-Windows-lightgrey?logo=windows)](https://github.com/sql-cockpit/sql-cockpit-servicemanager)
 
 > **Part of the [SQL Cockpit](https://github.com/sql-cockpit/sql-cockpit) suite** – Your modern database management companion
 
@@ -58,7 +58,7 @@ Together with the main [SQL Cockpit Desktop app](https://github.com/sql-cockpit/
 
 ### For End Users
 
-Download the latest installer from the [Releases page](https://github.com/jjmpsp/sql-cockpit-servicemanager/releases):
+Download the latest installer from the [Releases page](https://github.com/sql-cockpit/sql-cockpit-servicemanager/releases):
 
 - **`SQL Cockpit Service Control Setup *.exe`** – Run this single installer to provision the complete suite
 
@@ -73,7 +73,7 @@ The suite installer automatically provisions:
 
 ```powershell
 # Clone the repository
-git clone https://github.com/jjmpsp/sql-cockpit-servicemanager.git
+git clone https://github.com/sql-cockpit/sql-cockpit-servicemanager.git
 cd sql-cockpit-servicemanager
 
 # Prepare the desktop bundle
@@ -264,9 +264,9 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 ## 🔗 Links
 
 - **Main Repository:** [https://github.com/sql-cockpit/sql-cockpit](https://github.com/sql-cockpit/sql-cockpit)
-- **Releases:** [https://github.com/jjmpsp/sql-cockpit-servicemanager/releases](https://github.com/jjmpsp/sql-cockpit-servicemanager/releases)
-- **Issues:** [https://github.com/jjmpsp/sql-cockpit-servicemanager/issues](https://github.com/jjmpsp/sql-cockpit-servicemanager/issues)
-- **Actions:** [https://github.com/jjmpsp/sql-cockpit-servicemanager/actions](https://github.com/jjmpsp/sql-cockpit-servicemanager/actions)
+- **Releases:** [https://github.com/sql-cockpit/sql-cockpit-servicemanager/releases](https://github.com/sql-cockpit/sql-cockpit-servicemanager/releases)
+- **Issues:** [https://github.com/sql-cockpit/sql-cockpit-servicemanager/issues](https://github.com/sql-cockpit/sql-cockpit-servicemanager/issues)
+- **Actions:** [https://github.com/sql-cockpit/sql-cockpit-servicemanager/actions](https://github.com/sql-cockpit/sql-cockpit-servicemanager/actions)
 
 ---
 
@@ -274,6 +274,6 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 
 **Made with ❤️ by the SQL Cockpit Team**
 
-[⭐ Star this repo](https://github.com/jjmpsp/sql-cockpit-servicemanager) | [🐛 Report an issue](https://github.com/jjmpsp/sql-cockpit-servicemanager/issues) | [📖 View main project](https://github.com/sql-cockpit/sql-cockpit)
+[⭐ Star this repo](https://github.com/sql-cockpit/sql-cockpit-servicemanager) | [🐛 Report an issue](https://github.com/sql-cockpit/sql-cockpit-servicemanager/issues) | [📖 View main project](https://github.com/sql-cockpit/sql-cockpit)
 
 </div>
