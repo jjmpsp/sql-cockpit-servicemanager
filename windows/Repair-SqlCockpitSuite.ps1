@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param(
     [string]$InstallDir = "",
     [string]$SettingsPath = "",
@@ -229,7 +229,7 @@ function Ensure-DesktopComponentSettings {
         $argsList.Add([string]$value) | Out-Null
     }
 
-    Set-ArgPair -ArgsList $argsList -Name "-File" -Value "{RepoRoot}\Start-SqlCockpitDesktopPackaged.ps1"
+    Set-ArgPair -ArgsList $argsList -Name "-File" -Value "{RepoRoot}\scripts\runtime\Start-SqlCockpitDesktopPackaged.ps1"
     Set-ArgPair -ArgsList $argsList -Name "-RuntimeProfile" -Value "prod"
     Set-ArgPair -ArgsList $argsList -Name "-ManageComponents" -Value "false"
     Set-ArgPair -ArgsList $argsList -Name "-ExternalApiOnly" -Value "true"
@@ -412,3 +412,4 @@ if (-not (Test-ControlApiHealth)) {
 Write-Host "[SUITE] Repair/provisioning completed successfully." -ForegroundColor Green
 Write-Host "[SUITE] Settings: $SettingsPath" -ForegroundColor DarkCyan
 Write-Host "[SUITE] Desktop EXE: $resolvedDesktopExe" -ForegroundColor DarkCyan
+

@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu, Tray, nativeImage, ipcMain, Notification, shell, clipboard } = require("electron");
+﻿const { app, BrowserWindow, Menu, Tray, nativeImage, ipcMain, Notification, shell, clipboard } = require("electron");
 const path = require("path");
 const fs = require("fs");
 const os = require("os");
@@ -445,7 +445,7 @@ function ensureDesktopLaunchArguments(fileName, args, repoRoot) {
 
     const scriptPath = String(resolvedArgs[fileArgIndex + 1] || "");
     const scriptName = path.basename(scriptPath).toLowerCase();
-    const packagedLauncherPath = path.join(repoRoot, "Start-SqlCockpitDesktopPackaged.ps1");
+    const packagedLauncherPath = path.join(repoRoot, "scripts", "runtime", "Start-SqlCockpitDesktopPackaged.ps1");
 
     if (scriptName === "start-sqlcockpitdesktop.ps1" && fs.existsSync(packagedLauncherPath)) {
         resolvedArgs[fileArgIndex + 1] = packagedLauncherPath;
@@ -1106,3 +1106,4 @@ app.on("activate", () => {
         mainWindow.show();
     }
 });
+

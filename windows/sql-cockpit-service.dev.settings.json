@@ -1,4 +1,4 @@
-{
+﻿{
   "serviceName": "SQLCockpitServiceHost",
   "repoRoot": "C:\\Scripts\\SQL Tables Sync",
   "desktopRepoRoot": "C:\\Scripts\\SQL Tables Sync\\webapp",
@@ -60,7 +60,7 @@
         "-ExecutionPolicy",
         "Bypass",
         "-File",
-        "{RepoRoot}\\Start-SqlTablesSyncDocsServer.ps1",
+        "{RepoRoot}\\scripts\\runtime\\Start-SqlTablesSyncDocsServer.ps1",
         "-ListenPrefix",
         "http://127.0.0.1:8001/"
       ],
@@ -78,7 +78,7 @@
         "-ExecutionPolicy",
         "Bypass",
         "-File",
-        "{RepoRoot}\\Start-SqlTablesSyncNotificationsServer.ps1",
+        "{RepoRoot}\\scripts\\runtime\\Start-SqlTablesSyncNotificationsServer.ps1",
         "-ListenPrefix",
         "http://127.0.0.1:8090/",
         "-DevMode"
@@ -117,7 +117,7 @@
         "-ExecutionPolicy",
         "Bypass",
         "-File",
-        "{RepoRoot}\\Start-SqlCockpitDesktopPackaged.ps1",
+        "{RepoRoot}\\scripts\\runtime\\Start-SqlCockpitDesktopPackaged.ps1",
         "-ConfigServer",
         "NASCAR",
         "-ConfigDatabase",
@@ -147,3 +147,4 @@
     }
   ]
 }
+
