@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Scripts\\SQL Tables Sync\\service\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj": {}
+    "E:\\Scripts\\SQL Tables Sync\\sql-cockpit-os-services\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj": {}
   },
   "projects": {
-    "C:\\Scripts\\SQL Tables Sync\\service\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj": {
+    "E:\\Scripts\\SQL Tables Sync\\sql-cockpit-os-services\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Scripts\\SQL Tables Sync\\service\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj",
+        "projectUniqueName": "E:\\Scripts\\SQL Tables Sync\\sql-cockpit-os-services\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj",
         "projectName": "SqlCockpit.ServiceHost.Windows",
-        "projectPath": "C:\\Scripts\\SQL Tables Sync\\service\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj",
+        "projectPath": "E:\\Scripts\\SQL Tables Sync\\sql-cockpit-os-services\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj",
         "packagesPath": "C:\\Users\\Administrator.PEACOCKS\\.nuget\\packages\\",
-        "outputPath": "C:\\Scripts\\SQL Tables Sync\\service\\windows\\SqlCockpit.ServiceHost.Windows\\obj\\",
+        "outputPath": "E:\\Scripts\\SQL Tables Sync\\sql-cockpit-os-services\\windows\\SqlCockpit.ServiceHost.Windows\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator.PEACOCKS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -65,11 +65,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.419/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }

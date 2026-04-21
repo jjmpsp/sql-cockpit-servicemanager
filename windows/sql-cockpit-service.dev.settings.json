@@ -4,7 +4,7 @@
   "desktopRepoRoot": "C:\\Scripts\\SQL Tables Sync\\webapp",
   "apiRepoRoot": "C:\\Scripts\\SQL Tables Sync\\sql-cockpit-api",
   "serviceRepoRoot": "C:\\Scripts\\SQL Tables Sync\\service",
-  "objectSearchRepoRoot": "C:\\Scripts\\SQL Tables Sync\\object-search",
+  "objectSearchRepoRoot": "C:\\Scripts\\SQL Tables Sync\\sql-cockpit-object-search",
   "listenPrefix": "http://127.0.0.1:8610/",
   "requireLocalRequests": true,
   "apiKey": "",
@@ -147,4 +147,5 @@
     }
   ]
 }
+
 

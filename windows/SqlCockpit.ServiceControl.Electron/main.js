@@ -163,7 +163,7 @@ function readRawSettings(explicitPath = "") {
     const desktopRepoRoot = String(raw.desktopRepoRoot || "").trim() || path.join(repoRoot, "webapp");
     const apiRepoRoot = String(raw.apiRepoRoot || "").trim() || path.join(repoRoot, "sql-cockpit-api");
     const serviceRepoRoot = String(raw.serviceRepoRoot || "").trim() || path.join(repoRoot, "service");
-    const objectSearchRepoRoot = String(raw.objectSearchRepoRoot || "").trim() || path.join(repoRoot, "object-search");
+    const objectSearchRepoRoot = String(raw.objectSearchRepoRoot || "").trim() || path.join(repoRoot, "sql-cockpit-object-search");
     const settingsDirectory = path.dirname(settingsPath);
     return { raw, settingsPath, repoRoot, desktopRepoRoot, apiRepoRoot, serviceRepoRoot, objectSearchRepoRoot, settingsDirectory };
 }
@@ -175,7 +175,7 @@ function buildRepoRoots(rawSettings, fallbackRepoRoot) {
         desktopRepoRoot: String(rawSettings?.desktopRepoRoot || "").trim() || path.join(repoRoot, "webapp"),
         apiRepoRoot: String(rawSettings?.apiRepoRoot || "").trim() || path.join(repoRoot, "sql-cockpit-api"),
         serviceRepoRoot: String(rawSettings?.serviceRepoRoot || "").trim() || path.join(repoRoot, "service"),
-        objectSearchRepoRoot: String(rawSettings?.objectSearchRepoRoot || "").trim() || path.join(repoRoot, "object-search")
+        objectSearchRepoRoot: String(rawSettings?.objectSearchRepoRoot || "").trim() || path.join(repoRoot, "sql-cockpit-object-search")
     };
 }
 
@@ -227,7 +227,7 @@ function ensureWebApiSettingsContract(explicitPath = "") {
         changed = true;
     }
     if (!String(raw.objectSearchRepoRoot || "").trim()) {
-        raw.objectSearchRepoRoot = path.join(repoRoot, "object-search");
+        raw.objectSearchRepoRoot = path.join(repoRoot, "sql-cockpit-object-search");
         changed = true;
     }
 
@@ -1106,4 +1106,5 @@ app.on("activate", () => {
         mainWindow.show();
     }
 });
+
 

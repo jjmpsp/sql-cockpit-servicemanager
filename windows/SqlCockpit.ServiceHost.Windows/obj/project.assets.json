@@ -53,44 +53,6 @@
           }
         }
       }
-    },
-    "net8.0-windows7.0/win-x64": {
-      "System.Diagnostics.EventLog/9.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.Diagnostics.EventLog.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll": {},
-          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "System.ServiceProcess.ServiceController/9.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Diagnostics.EventLog": "9.0.0"
-        },
-        "compile": {
-          "lib/net8.0/System.ServiceProcess.ServiceController.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net8.0/System.ServiceProcess.ServiceController.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      }
     }
   },
   "libraries": {
@@ -172,11 +134,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Scripts\\SQL Tables Sync\\service\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj",
+      "projectUniqueName": "E:\\Scripts\\SQL Tables Sync\\sql-cockpit-os-services\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj",
       "projectName": "SqlCockpit.ServiceHost.Windows",
-      "projectPath": "C:\\Scripts\\SQL Tables Sync\\service\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj",
+      "projectPath": "E:\\Scripts\\SQL Tables Sync\\sql-cockpit-os-services\\windows\\SqlCockpit.ServiceHost.Windows\\SqlCockpit.ServiceHost.Windows.csproj",
       "packagesPath": "C:\\Users\\Administrator.PEACOCKS\\.nuget\\packages\\",
-      "outputPath": "C:\\Scripts\\SQL Tables Sync\\service\\windows\\SqlCockpit.ServiceHost.Windows\\obj\\",
+      "outputPath": "E:\\Scripts\\SQL Tables Sync\\sql-cockpit-os-services\\windows\\SqlCockpit.ServiceHost.Windows\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator.PEACOCKS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -230,11 +192,6 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.419/PortableRuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win-x64": {
-        "#import": []
       }
     }
   }

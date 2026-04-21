@@ -1,4 +1,4 @@
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.Net;
 using System.ServiceProcess;
@@ -889,7 +889,7 @@ internal sealed class ServiceSettings
         }
         if (string.IsNullOrWhiteSpace(ObjectSearchRepoRoot))
         {
-            ObjectSearchRepoRoot = Path.GetFullPath(Path.Combine(RepoRoot, "object-search"));
+            ObjectSearchRepoRoot = Path.GetFullPath(Path.Combine(RepoRoot, "sql-cockpit-object-search"));
         }
 
         if (!ListenPrefix.EndsWith('/'))
@@ -964,3 +964,4 @@ internal sealed record ComponentHealthSnapshot(
     int? lastStatusCode,
     string? lastError,
     int consecutiveFailures);
+

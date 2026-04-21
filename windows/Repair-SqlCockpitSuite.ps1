@@ -194,7 +194,7 @@ function Ensure-DesktopComponentSettings {
     }
     $objectSearchRepoRootValue = [string]$settings.objectSearchRepoRoot
     if ([string]::IsNullOrWhiteSpace($objectSearchRepoRootValue)) {
-        $objectSearchRepoRootValue = Join-Path -Path $repoRootValue -ChildPath "object-search"
+        $objectSearchRepoRootValue = Join-Path -Path $repoRootValue -ChildPath "sql-cockpit-object-search"
     }
     Set-OrAddProperty -Target $settings -Name "desktopRepoRoot" -Value $desktopRepoRootValue
     Set-OrAddProperty -Target $settings -Name "apiRepoRoot" -Value $apiRepoRootValue
@@ -412,4 +412,5 @@ if (-not (Test-ControlApiHealth)) {
 Write-Host "[SUITE] Repair/provisioning completed successfully." -ForegroundColor Green
 Write-Host "[SUITE] Settings: $SettingsPath" -ForegroundColor DarkCyan
 Write-Host "[SUITE] Desktop EXE: $resolvedDesktopExe" -ForegroundColor DarkCyan
+
 
