@@ -1,4 +1,4 @@
-﻿{
+{
   "serviceName": "SQLCockpitServiceHost",
   "repoRoot": "C:\\Scripts\\SQL Tables Sync",
   "desktopRepoRoot": "C:\\Scripts\\SQL Tables Sync\\webapp",
@@ -25,9 +25,9 @@
       "args": [
         "server.js",
         "--configServer",
-        "NASCAR",
+        "YOUR_SQL_SERVER",
         "--configDatabase",
-        "EPC_Imports_PCK",
+        "YOUR_CONFIG_DATABASE",
         "--configSchema",
         "Sync",
         "--configIntegratedSecurity",
@@ -115,9 +115,9 @@
         "-File",
         "{RepoRoot}\\scripts\\runtime\\Start-SqlCockpitDesktopPackaged.ps1",
         "-ConfigServer",
-        "NASCAR",
+        "YOUR_SQL_SERVER",
         "-ConfigDatabase",
-        "EPC_Imports_PCK",
+        "YOUR_CONFIG_DATABASE",
         "-ConfigSchema",
         "Sync",
         "-ConfigIntegratedSecurity",
